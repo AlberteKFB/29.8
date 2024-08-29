@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sange</title>
+  </head>
+  <body>
+    <h1>Playliste</h1>
+    <ul></ul>
+
+    <script>
+      const liste = document.querySelector("ul");
+
+      const Sange = [
+        "Holler high",
+        "Espresso",
+        "Houdini",
+        "Funereal",
+        "555",
+        "Too sweet",
+        "High",
+        "Bite",
+        "Getting older",
+        "Paid",
+      ];
+
+      Sange.forEach(putListe);
+      function putListe(sang) {
+        console.log(sang);
+        liste.innerHTML += "<li>" + sang + "</li>";
+      }
+    </script>
+  </body>
+</html>
